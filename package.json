@@ -1,0 +1,68 @@
+{
+  "name": "react_json_form",
+  "version": "0.1.0",
+  "description": "React JSON Form is a lightweight framework and utility for building powerful dynamic forms in React applications.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "author": {
+    "name": "Nasser Sahebi",
+    "email": "nasser.sahebi@gmail.com"
+  },
+  "extends": "react-app",
+  "keywords": [
+    "react",
+    "reactjs",
+    "redux",
+    "react-redux",
+    "redux-form",
+    "form",
+    "react-form",
+    "async",
+    "async-form",
+    "json",
+    "json-form",
+    "react-json-form"
+  ],
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jquery": true,
+      "$": true,
+      "jQuery": true,
+      "node": true
+    },
+    "rules": {
+      "import/first": "off"
+    }
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "cloner": "^0.4.0",
+    "i18next": "^10.4.1",
+    "jquery": "^3.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
