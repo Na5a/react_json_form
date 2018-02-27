@@ -1,12 +1,12 @@
 # react_json_form
-A easy and scalable form builder and validator with **JSON** for **React JS**, Dynamically
+A easy and scalable form builder and validator with **JSON** or **Object** for **React JS**, Dynamically
 > **Note:** this code is not completly move in github and some feature are disabled for now, working on it
 
 ## Background
-one year ago i worked on project with multiple forms and various and customizable inputs, i try to make easy way to generate form and handle it with ReactJS and JSON and BS3. the result of that was this component.
+one year ago i worked on project with multiple forms and various and customizable inputs, i try to make easy way to generate form and handle it with ReactJS and JSON/Object and BS3. the result of that was this component.
 this code is not completely on NPM, _working on free time_                                                                                        
 ## What You Can Do
- 1. generate easy form with json
+ 1. generate easy form with json or object
  2. handle ajax or html submit
  3. validator and easy way to add your custom validation
  4. multiple type support and easy way to add your custom type
