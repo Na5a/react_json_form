@@ -169,7 +169,5 @@ export default class Form1 extends appForm {
 ```
 
 ## images
-[[https://github.com/na5a/react_json_form/public/images/login.png|alt=octocat]]
- Contact a human
-
+![login page](https://github.com/Na5a/react_json_form/raw/master/public/images/login.png)
 
