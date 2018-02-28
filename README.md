@@ -42,7 +42,7 @@ here is supported props of form in main component
             className:'btn btn-default ml-10',
             label:'reset'
         }*/,
-        init:{},
+        init:{}, //init form data from server with ajax, json or callback
         then: function(data){},
         catch: function(err){}
     }
@@ -170,4 +170,5 @@ export default class Form1 extends appForm {
 
 ## images
 ![login page](https://github.com/Na5a/react_json_form/raw/master/public/images/login.png)
+![form2](https://github.com/Na5a/react_json_form/raw/master/public/images/form2.png)
 

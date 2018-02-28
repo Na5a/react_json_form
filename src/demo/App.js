@@ -4,12 +4,25 @@ import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-d
 
 import Forms from './forms/';
 import Form1 from './forms/Form1';
+import Form2 from './forms/Form2';
+
+const Form2Layout = () => (
+    <div className="col-md-8 col-md-offset-2">
+        <div className="panel">
+            <div className="panel-body">
+                <Form2 />
+            </div>
+        </div>
+    </div>
+);
 
 const PrimaryLayout = () => (
     <div className="primary-layout">
         <Switch>
             <Route exact path="/" component={Forms} />
             <Route exact path="/form1" component={Form1} />
+            <Route exact path="/form2" component={Form2} />
+            <Route exact path="/form2-layout" component={Form2Layout} />
             <Redirect to="/" />
         </Switch>
     </div>

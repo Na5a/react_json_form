@@ -1,1 +1,80 @@
 .no-padding {padding: 0}
+
+
+/*input tip and error*/
+.sp-input-tip {position:relative;}
+.sp-input-tip .sp-input-tip-text {position:absolute;right:0;bottom:5px;background-color:#00BCD4;border-color:#00BCD4;padding: 2px 5px 1px 5px;border-radius: 2px;font-size: 85%;color:#fff;min-height:20px;z-index: 100;}
+.sp-input-tip .sp-input-tip-text:after {position:absolute;font-family:FontAwesome;content:'\f0d7';color:#00BCD4;right:10px;clear:both;display:block;font-size:14px;line-height:0;bottom:0;margin-bottom:-2px;z-index: 100;}
+.sp-input-tip .sp-input-tip-text.sp-input-tip-danger {background-color:#F44336;border-color:#F44336;display:table}
+.sp-input-tip .sp-input-tip-text.sp-input-tip-danger:after {color:#F44336;}
+.sp-input-tip.sp-input-tip-top-caret .sp-input-tip-text{top:5px;}
+.sp-input-tip.sp-input-tip-top-caret .sp-input-tip-text:after{top:-2px;content:'\f0d8';margin-bottom:0px;}
+.sp-input-tip.sp-input-tip-no-caret .sp-input-tip-text{top:0}
+.sp-input-tip.sp-input-tip-no-caret .sp-input-tip-text:after{display: none}
+
+
+/*custom radio/checkbox input*/
+.sp-radio input[type="radio"], .radio-inline .sp-radio input[type="radio"], .sp-checkbox input[type="checkbox"], .checkbox-inline .sp-checkbox input[type="checkbox"] {position:relative;}
+
+.sp-checkbox {position:relative;text-align:center;width:25px;overflow:hidden}
+.sp-checkbox input[type=checkbox]{visibility:hidden;}
+.sp-checkbox:after, .sp-checkbox:before{width:18px;height:18px;right:0;top:0;content:"";position:absolute;line-height:1;}
+.sp-checkbox:after {border:2px solid #1E88E5;border-radius:2px;cursor:pointer;}
+.sp-checkbox:before {margin-top:3px;color:#1565C0;transition: 0.3s opacity;opacity:0;font-size: 90%;}
+.sp-checkbox.checked:before, .sp-checkbox > input[type=checkbox]:checked + :before{font-family:FontAwesome;content:'\f00c';opacity:1}
+.sp-radio {position:relative;text-align:center;width:25px;overflow:hidden}
+.sp-radio input[type=radio]{visibility:hidden;}
+.sp-radio:after, .sp-radio:before{width:18px;height:18px;right:0;top:0;content:"";position:absolute;line-height:1;}
+.sp-radio:after {border:2px solid #1E88E5;border-radius:100%;cursor:pointer;}
+.sp-radio:before {padding:2px;transition:0.3s opacity;opacity:0;border-radius:100%;right:4px;top:4px;width:0;height:0}
+.sp-radio.checked:before, .sp-radio > input[type=radio]:checked + :before{opacity:1;border: 3px solid #1565C0 !important;background: #1565C0 !important;}
+.sp-radio-container {cursor: pointer;}
+.sp-radio-container:hover .sp-radio:before{opacity:1;border:3px solid #ddd;background:#ddd}
+.sp-radio-container:focus {border:0;box-shadow:0;outline-width:0;}
+.sp-radio-container:focus .sp-radio:after{border-color:#003067;}
+.sp-radio-container.sp-radio-button {}
+.sp-radio-container.sp-radio-button .sp-radio{display: none}
+
+.sp-checkbox-container:focus {border:0;box-shadow:0;outline-width:0;}
+.sp-checkbox-container:focus .sp-checkbox:after{border-color:#003067;}
+.has-error .sp-checkbox {color:#D84315;}
+.has-error .sp-checkbox:after {border-color:#D84315;transition:0.5s border;}
+.has-error .sp-radio:after {border-color:#D84315;}
+
+
+/* spinner style*/
+.sp-spinner {position:relative;}
+.sp-spinner .sp-children{padding:0px;margin:0;}
+.sp-spinner .sp-overlay{position:absolute;z-index:998;border:none;margin:0;padding:0;width:100%;height:100%;top:0;left:0;cursor:wait;background-color:rgba(255, 255, 255,0.8);}
+.sp-spinner .sp-container{position:absolute;z-index:999;width:100%;height:100%;top:0;}
+
+
+/* tags input style*/
+.sp-tagsinput {position:relative;overflow:visible;-webkit-user-select:none;-moz-user-select:none;user-select: none;}
+.sp-tagsinput .sp-tag{cursor: move;}
+.sp-tagsinput .sp-placeholder {opacity: 0.7;}
+.sp-tagsinput .sp-placeholder > * {}
+.sp-tagsinput input{height: auto}
+.sp-tagsinput .sp-tag [data-role="remove"] {left: 5px}
+.sp-tagsinput input{min-width:150px;}
+.sp-tag-user {}
+.sp-tag-user .label{border: 1px solid rgb(221, 221, 221);}
+.sp-tag-user .label > img{width: auto; height: 28px; margin: 1px;}
+
+
+/*Autocomplete styles*/
+.autocomplete-suggestions {border: 1px solid #ddd;background:#FFF;overflow-y:auto;max-height:200px;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);}
+.autocomplete-suggestion {padding:7px 12px;cursor: pointer;white-space: nowrap;overflow:hidden;}
+.autocomplete-suggestion:hover { background:#f5f5f5 !important;color: #000!important;}
+.autocomplete-selected { background:#f5f5f5; color: #000}
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-suggestion-floatbox {overflow:hidden;background-color:#03A9F4 !important;padding-right: 35px;white-space: normal !important;}
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-suggestion-floatbox:hover {background-color:#29B6F6 !important}
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-suggestion-floatbox b {position: absolute;height: 100%;top: 0;display: block;right: 0;background-color: rgba(0,0,0,0.1);}
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-suggestion-floatbox b .sp_icon {position:relative;padding:10px;top: 50%;transform:translateY(-50%);}
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+
+/*form control*/
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {color:#999;}
