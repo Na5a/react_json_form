@@ -119,6 +119,34 @@ all supported types exist in [types](src/components/form/types) dir and define i
 1. [upload](src/components/form/types/upload.js) - dropbox upload and crop image support, disable for now
 
 
+## validator
+here is the current input validator, you can add your own validator with callback function on input or change the [validator]((src/components/form/validator.js)) file
+1. matchTo: other input name for matching (exp. two password match and ...)
+1. between: check value is in range of two numbers (exp. [1,10])
+1. max: number maximum
+1. min: number minimum
+1. maxLen: string maximum lenght
+1. minLen: string minimum lenght
+1. numeric: value must be numerical
+1. required: value is required and can't be empty
+1. phone: check phone format
+1. mobile: check mobile phone format
+1. date: check date format
+1. email: check email format (default active in [mail](src/components/form/types/mail.js) component)
+1. _set your role with callback for checking_
+
+### how to use validator
+```jsx
+    name: {type:'text',label:'required value',rules:{required:true,minLen:1}}
+    age: {type:'number',label:'age',rules:{between:[10,99]}}
+    
+```
+password checking with matchTo
+```jsx
+    'Pwd': {type:'password',mode:'password',rules:{required:true,minLen:3},'password'},
+    'Pwd2': {type:'password',mode:'password',rules:{required:true,matchTo:'Pwd2'},label:'repeat password'},
+    
+```
 
 ## How to use
 See [demo](src/demo) folder for examples
